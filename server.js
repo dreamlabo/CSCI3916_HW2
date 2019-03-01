@@ -69,8 +69,7 @@ router.post('/signup', function(req, res) {
         db.save(newUser); //no duplicate checking
         res.json({success: true, msg: 'Successful created new user.'});
     }
-    router.all('/signup')
-        res.json({notsucess: 'weee'});
+
 
 });
 
