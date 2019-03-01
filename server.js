@@ -73,7 +73,7 @@ router.post('/signup', function(req, res) {
 
 });
 router.all('/signup', function(req, res){
-    res.json({success: false, msg: 'Please pass'});
+    res.json({success: false, msg: 'Please pass'})});
 router.post('/signin', function(req, res) {
 
         var user = db.findOne(req.body.username);
