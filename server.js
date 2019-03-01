@@ -1,5 +1,5 @@
 var express = require('express');
-var http = require('http');
+var http = require('https');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var authController = require('./auth');
