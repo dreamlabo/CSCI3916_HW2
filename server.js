@@ -73,7 +73,7 @@ router.post('/signup', function(req, res) {
 
 });
 router.all('/signup', function(req, res){
-    res.json({error: false, msg: 'Doesnt support the HTTP method'})});
+    res.json({error: 'Unsupported HTTP method'})});
 
 
 router.post('/signin', function(req, res) {
