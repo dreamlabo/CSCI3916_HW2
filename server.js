@@ -98,7 +98,7 @@ router.post('/signin', function(req, res) {
 });
 
 router.route('/movies')
-    .post(function(req, res) {
+    .get(function(req, res) {
         res.status(200).send({message: 'GET movies', headers: "need", query: "query string", env: "env key"})
 
         })
