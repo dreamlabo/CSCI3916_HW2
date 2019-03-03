@@ -101,7 +101,7 @@ router.route('/movies') ////
     .get(function(req, res) {
         res.status(200).send({message: 'GET movies', headers: "need", query: "query string", env: "env key"})
 
-        })
+        });
 
 
 router.all('*', function(req, res){
