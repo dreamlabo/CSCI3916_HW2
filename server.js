@@ -94,9 +94,10 @@ router.post('/signin', function(req, res) {
                 res.status(401).send({success: false, msg: 'Authentication failed. Wrong password.'});
             }
         };
-        router.all('/signin', function(req, res){
-        res.json({error: 'Unsupported HTTP method'})});
+
 });
+router.all('/signin', function(req, res){
+    res.json({error: 'Unsupported HTTP method'})});
 
 app.use('/', router);
 app.listen(process.env.PORT || 8080);
