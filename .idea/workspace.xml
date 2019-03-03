@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="added &quot;Unsupported HTTP method&quot; in signup">
+    <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="added &quot;Unsupported HTTP method&quot; in signin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="90" column="47" selection-start-line="90" selection-start-column="47" selection-end-line="90" selection-end-column="47" />
+            <state relative-caret-position="542">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
             </state>
           </provider>
         </entry>
@@ -218,7 +218,7 @@
       <workItem from="1550105398207" duration="557000" />
       <workItem from="1551390639301" duration="118000" />
       <workItem from="1551391530391" duration="1047000" />
-      <workItem from="1551457885030" duration="11878000" />
+      <workItem from="1551457885030" duration="13370000" />
     </task>
     <task id="LOCAL-00001" summary="added createserver line in server">
       <created>1551458704899</created>
@@ -297,15 +297,35 @@
       <option name="project" value="LOCAL" />
       <updated>1551468377368</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added &quot;Unsupported HTTP method&quot; in signin">
+      <created>1551639905889</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1551639905889</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added &quot;Unsupported HTTP method&quot; in signin">
+      <created>1551639966716</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1551639966716</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added &quot;Unsupported HTTP method&quot; in signin">
+      <created>1551641009200</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1551641009200</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36777000" />
+    <option name="totallyTimeSpent" value="38269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16280295" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -314,7 +334,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32792208" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27813852" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -336,7 +356,8 @@
     <MESSAGE value="updated hoek version" />
     <MESSAGE value="added &quot;unsupported methods in signup&quot;" />
     <MESSAGE value="added &quot;Unsupported HTTP method&quot; in signup" />
-    <option name="LAST_COMMIT_MESSAGE" value="added &quot;Unsupported HTTP method&quot; in signup" />
+    <MESSAGE value="added &quot;Unsupported HTTP method&quot; in signin" />
+    <option name="LAST_COMMIT_MESSAGE" value="added &quot;Unsupported HTTP method&quot; in signin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -415,8 +436,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="90" column="47" selection-start-line="90" selection-start-column="47" selection-end-line="90" selection-end-column="47" />
+        <state relative-caret-position="542">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
         </state>
       </provider>
     </entry>
