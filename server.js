@@ -99,7 +99,7 @@ router.post('/signin', function(req, res) {
 
 router.route('/movies') //////
     .get(function(req, res) {
-        res.status(200).send({message: 'GET movies', headers: req.headers, query: req.query, env: env.process.SECRET_KEY})
+        res.status(200).send({message: 'GET movies', headers: req.headers, query: req.query, env: ""})
 
         });
 
