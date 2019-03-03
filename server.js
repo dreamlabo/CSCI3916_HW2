@@ -70,10 +70,10 @@ router.post('/signup', function(req, res) {
         res.json({success: true, msg: 'Successful created new user.'});
     }
 
-
 });
 router.all('/signup', function(req, res){
     res.json({error: 'Unsupported HTTP method'})});
+
 
 
 router.post('/signin', function(req, res) {
@@ -94,6 +94,8 @@ router.post('/signin', function(req, res) {
                 res.status(401).send({success: false, msg: 'Authentication failed. Wrong password.'});
             }
         };
+        router.all('/signin', function(req, res){
+        res.json({error: 'Unsupported HTTP method'})});
 });
 
 app.use('/', router);

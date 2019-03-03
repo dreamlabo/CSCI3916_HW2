@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="updated hoek version">
+    <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="added &quot;Unsupported HTTP method&quot; in signup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+            <state relative-caret-position="320">
+              <caret line="90" column="47" selection-start-line="90" selection-start-column="47" selection-end-line="90" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -217,7 +218,7 @@
       <workItem from="1550105398207" duration="557000" />
       <workItem from="1551390639301" duration="118000" />
       <workItem from="1551391530391" duration="1047000" />
-      <workItem from="1551457885030" duration="9264000" />
+      <workItem from="1551457885030" duration="11878000" />
     </task>
     <task id="LOCAL-00001" summary="added createserver line in server">
       <created>1551458704899</created>
@@ -268,11 +269,39 @@
       <option name="project" value="LOCAL" />
       <updated>1551467910017</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated hoek version">
+      <created>1551468049739</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551468049739</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated hoek version">
+      <created>1551468093458</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551468093458</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added &quot;unsupported methods in signup&quot;">
+      <created>1551468229704</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1551468229704</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added &quot;Unsupported HTTP method&quot; in signup">
+      <created>1551468377368</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1551468377368</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34163000" />
+    <option name="totallyTimeSpent" value="36777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -305,7 +334,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added createserver line in server" />
     <MESSAGE value="updated hoek version" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated hoek version" />
+    <MESSAGE value="added &quot;unsupported methods in signup&quot;" />
+    <MESSAGE value="added &quot;Unsupported HTTP method&quot; in signup" />
+    <option name="LAST_COMMIT_MESSAGE" value="added &quot;Unsupported HTTP method&quot; in signup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -384,8 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="76" column="43" lean-forward="true" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
+        <state relative-caret-position="320">
+          <caret line="90" column="47" selection-start-line="90" selection-start-column="47" selection-end-line="90" selection-end-column="47" />
         </state>
       </provider>
     </entry>
