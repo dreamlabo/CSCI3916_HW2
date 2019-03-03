@@ -71,8 +71,8 @@ router.post('/signup', function(req, res) {
     }
 
 });
-router.all('/signup', function(req, res){
-    res.json({error: 'Unsupported HTTP method'})});
+//router.all('/signup', function(req, res){
+    //res.json({error: 'Unsupported HTTP method'})});
 
 
 
@@ -96,7 +96,7 @@ router.post('/signin', function(req, res) {
         };
 
 });
-router.all('/signin', function(req, res){
+router.all('*', function(req, res){
     res.json({error: 'Unsupported HTTP method'})});
 
 app.use('/', router);
