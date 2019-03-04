@@ -145,7 +145,7 @@ router.route('/movies')
         }
     });
 
-
+/////
 router.all('*', function(req, res){
     res.status(400);
     res.json({status: 400, error: 'Unsupported HTTP method'})});
