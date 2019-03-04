@@ -94,18 +94,49 @@ router.post('/signin', function(req, res) {
                 res.status(401).send({success: false, msg: 'Authentication failed. Wrong password.'});
             }
         };
-
 });
 
-router.route('/movies') //////
+router.route('/movies')
     .get(function(req, res) {
-        res.status(200).send({message: 'GET movies', headers: req.headers, query: req.query, env: ""})
+        res.json({status: 200, message: 'GET movies', headers: req.headers, query: req.query, env: process.env.SECRET_KEY})
+        })
 
-        });
+    .post(function(req, res) {
+        res.json({status: 200, message: 'movie saved', headers: req.headers, query: req.query, env: process.env.SECRET_KEY})
+        })
+
+    .put(authJwtController.isAuthenticated,function (req, res) {
+        res.json({status: 200, message: 'movie updated', headers: req.headers, query: req.query, env: process.env.SECRET_KEY})
+    })
+
+    .delete(function(req, res) {
+        var user = db.findOne(req.body.username);
+
+        if (!user) {
+            res.status(401).send({success: false, msg: 'Authentication failed. User not found.'});
+        }
+        else {
+            // check if password matches
+            if (req.body.password == user.password) {
+                 userToken = {id: user.id, username: user.username};
+               var token = jwt.sign(userToken, process.env.SECRET_KEY);
+                res.json({
+                    status: 200,
+                    message: 'movie deleted',
+                    headers: req.headers,
+                    query: req.query,
+                    env: process.env.SECRET_KEY
+                })
+            } else {
+                res.status(401).send({success: false, msg: 'Authentication failed. User not found.'})
+            }
+        }
+    });
 
 
 router.all('*', function(req, res){
     res.json({error: 'Unsupported HTTP method'})});
+
 
 app.use('/', router);
 app.listen(process.env.PORT || 8080);
