@@ -98,15 +98,27 @@ router.post('/signin', function(req, res) {
 
 router.route('/movies')
     .get(function(req, res) {
-        res.json({status: 200, message: 'GET movies', headers: req.headers, query: req.query, env: process.env.SECRET_KEY})
+        res.json({status: 200,
+            message: 'GET movies',
+            headers: req.headers,
+            query: req.query,
+            env: process.env.SECRET_KEY})
         })
 
     .post(function(req, res) {
-        res.json({status: 200, message: 'movie saved', headers: req.headers, query: req.query, env: process.env.SECRET_KEY})
+        res.json({status: 200,
+            message: 'movie saved',
+            headers: req.headers,
+            query: req.query,
+            env: process.env.SECRET_KEY})
         })
 
     .put(authJwtController.isAuthenticated,function (req, res) {
-        res.json({status: 200, message: 'movie updated', headers: req.headers, query: req.query, env: process.env.SECRET_KEY})
+        res.json({status: 200,
+            message: 'movie updated',
+            headers: req.headers, query:
+            req.query,
+            env: process.env.SECRET_KEY})
     })
 
     .delete(function(req, res) {
@@ -135,7 +147,8 @@ router.route('/movies')
 
 
 router.all('*', function(req, res){
-    res.json({error: 'Unsupported HTTP method'})});
+    res.status(400);
+    res.json({status: 400, error: 'Unsupported HTTP method'})});
 
 
 app.use('/', router);
